@@ -1,0 +1,32 @@
+<section class="panel detail-panel">
+  <div class="container">
+    <div class="section-label">02 · SKILLS</div>
+    <div class="heading-row">
+      <div>
+        <h2 class="big-title">My <span>toolbox.</span></h2>
+        <p>
+          Technologies I use to build frontend experiences, APIs, analytics and AI-enabled products.
+        </p>
+      </div>
+      <div class="stack-badge">MODERN<br /><b>FULL STACK</b></div>
+    </div>
+    <div class="skill-grid">
+      <article class="skill-card" *ngFor="let group of groups">
+        <div class="skill-head">
+          <div>
+            <b>{{ group.title }}</b
+            ><small>{{ group.caption }}</small>
+          </div>
+          <span>+</span>
+        </div>
+        <div class="skill" *ngFor="let skill of group.skills">
+          <div class="skill-top">
+            <span>{{ skill.name }}</span
+            ><span>{{ skill.level }}%</span>
+          </div>
+          <div class="bar"><i [style.width.%]="skill.level"></i></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

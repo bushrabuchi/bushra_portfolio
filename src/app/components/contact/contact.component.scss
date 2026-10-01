@@ -1,0 +1,112 @@
+.detail-panel {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  animation: panelIn 0.55s ease both;
+}
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 90px;
+  align-items: center;
+}
+.section-label {
+  color: #9a7cff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin-bottom: 18px;
+}
+.contact-copy h2 {
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  line-height: 0.92;
+  letter-spacing: -0.065em;
+  margin: 0 0 23px;
+}
+.contact-copy h2 span {
+  color: #9070ff;
+}
+.contact-copy > p {
+  color: #8f98b1;
+  line-height: 1.85;
+  max-width: 620px;
+  font-size: 0.9rem;
+}
+.contact-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.contact-panel {
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(16, 22, 48, 0.92), rgba(7, 11, 27, 0.9));
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.22);
+}
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8c96af;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 25px;
+}
+.availability span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #62e49b;
+  box-shadow: 0 0 12px #62e49b;
+}
+.contact-row {
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.contact-row small {
+  display: block;
+  color: #626d87;
+  font-size: 0.54rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+}
+.contact-row a {
+  color: #dce0ed;
+  font-size: 0.78rem;
+}
+.contact-row a:hover {
+  color: #9b7eff;
+}
+.contact-note {
+  font-size: 0.8;
+  color: #626d87;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+@keyframes panelIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.992);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 800px) {
+  .detail-panel {
+    min-height: auto;
+    padding: 75px 0;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-copy h2 {
+    font-size: 3rem;
+  }
+}

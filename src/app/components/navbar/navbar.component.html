@@ -1,0 +1,20 @@
+<header class="nav">
+  <div class="nav-inner container">
+    <button class="brand" type="button" (click)="selectTab('home')" aria-label="Go to home">
+      <span class="brand-mark">&lt;/&gt;</span><span>Bushra<span class="dot">.</span>dev</span>
+    </button>
+
+    <nav [class.open]="menuOpen" aria-label="Portfolio navigation">
+      @for (item of navItems; track item.id) {
+        <button type="button" [class.active]="activeTab === item.id" (click)="selectTab(item.id)">
+          {{ item.label }}
+        </button>
+      }
+      <button class="hire" type="button" (click)="selectTab('contact')">Hire Me <span>↗</span></button>
+    </nav>
+
+    <button class="menu-btn" type="button" aria-label="Open navigation" [attr.aria-expanded]="menuOpen" (click)="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+:root {
+  --bg: #050816;
+  --bg-soft: #080d20;
+  --card: #0a1024;
+  --text: #f5f7ff;
+  --muted: #9aa3bb;
+  --line: rgba(255, 255, 255, 0.08);
+  --primary: #7357ff;
+  --primary-2: #9a78ff;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: min(1160px, calc(100% - 44px));
+  margin: 0 auto;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 17px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
+}
+.btn-primary {
+  border-color: transparent;
+  color: #fff;
+  background: linear-gradient(135deg, #7357ff, #a07dff);
+  box-shadow: 0 12px 30px rgba(115, 87, 255, 0.2);
+}
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.015);
+  color: #dce0ee;
+}
+.btn-secondary:hover {
+  border-color: rgba(145, 115, 255, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 28px, 1160px);
+  }
+}

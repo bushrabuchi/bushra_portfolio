@@ -1,0 +1,5 @@
+:host { display:block; min-height:100vh; }
+.portfolio-stage { position:relative; min-height:calc(100vh - 76px); overflow:hidden; }
+.portfolio-stage::before { content:""; position:fixed; inset:76px 0 0; pointer-events:none; background:radial-gradient(circle at 80% 20%,rgba(124,92,255,.10),transparent 28%),radial-gradient(circle at 15% 80%,rgba(76,210,255,.05),transparent 24%); z-index:-1; }
+.stage-hint { position:fixed; right:22px; bottom:18px; color:#69728e; font-size:.62rem; letter-spacing:.08em; text-transform:uppercase; opacity:.65; pointer-events:none; }
+@media(max-width:700px){ .stage-hint{display:none}.portfolio-stage{min-height:calc(100vh - 68px)} }
