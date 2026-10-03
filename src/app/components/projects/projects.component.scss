@@ -47,6 +47,12 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 13px;
 }
+.slider-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
 .slider-btn {
   flex-shrink: 0;
   width: 48px;
