@@ -7,9 +7,14 @@
         <p>Open a project when you want the details — keeping the portfolio clean and focused.</p>
       </div>
       <span class="count">{{ projects.length }} FEATURED</span>
+      <div class="slider-btns">
+        <button class="slider-btn prev" (click)="previousProjects()"><</button>
+        <button class="slider-btn next" (click)="nextProjects()">></button>
+      </div>
     </div>
+
     <div class="project-grid">
-      <article class="project-card" *ngFor="let project of projects; let i = index">
+      <article class="project-card" *ngFor="let project of displayProjects; let i = index">
         <div class="project-art">
           <span>{{ project.number }}</span>
           <div class="window">

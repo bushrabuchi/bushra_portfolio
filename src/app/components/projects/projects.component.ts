@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 interface Project {
   number: string;
   title: string;
@@ -17,6 +17,31 @@ interface Project {
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
+  currentPage = 0;
+
+  projectsPerPage = 4;
+
+  get displayProjects() {
+    const start = this.currentPage * this.projectsPerPage;
+
+    return this.projects.slice(start, start + this.projectsPerPage);
+  }
+
+  get totalPages() {
+    return Math.ceil(this.projects.length / this.projectsPerPage);
+  }
+
+  nextProjects() {
+    if (this.currentPage < this.totalPages - 1) {
+      this.currentPage++;
+    }
+  }
+
+  previousProjects() {
+    if (this.currentPage > 0) {
+      this.currentPage--;
+    }
+  }
   projects: Project[] = [
     {
       number: '01',
@@ -56,6 +81,25 @@ export class ProjectsComponent {
       type: 'ANALYTICS',
       demo: '#',
       github: 'https://github.com/bushrabuchi/react-admin-dashboard-master',
+    },
+    
+    {
+      number: '05',
+      title: 'Angular Dashboard',
+      description: 'Angular dashboard with KPIs, filters, charts and backend services.',
+      stack: ['Angular', 'TypeScript', 'HTML', 'SCSS'],
+      type: 'FULL STACK',
+      demo: 'https://bushrabuchi.github.io/angular-dashboard/',
+      github: 'https://github.com/bushrabuchi/angular-dashboard',
+    },
+    {
+      number: '06',
+      title: 'Bushra Portfolio',
+      description: 'Bushra Portfolio with Angular and TypeScript.',
+      stack: ['Angular', 'TypeScript', 'HTML', 'SCSS'],
+      type: 'FULL STACK',
+      demo: 'https://bushrabuchi.github.io/bushra_portfolio/',
+      github: 'https://github.com/bushrabuchi/bushra_portfolio',
     },
   ];
 }
