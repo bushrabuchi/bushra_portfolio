@@ -50,14 +50,16 @@
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 16px;
 }
 .skill-card {
-  padding: 16px;
+  padding: 20px;
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 16px;
   background: linear-gradient(145deg, rgba(15, 21, 47, 0.9), rgba(7, 11, 27, 0.9));
-  transition: 0.3s;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 .skill-card:hover {
   transform: translateY(-4px);
@@ -66,63 +68,36 @@
 .skill-head {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .skill-head b,
 .skill-head small {
   display: block;
 }
 .skill-head b {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .skill-head small {
-  font-size: 0.62rem;
-  color: #6f7892;
-  margin-top: 5px;
-}
-.skill-head > span {
-  font-size: 1.3rem;
-  color: #8063ff;
-}
-.skill {
-  margin: 10px 0;
-}
-.skill-top {
-  display: flex;
-  justify-content: space-between;
-  color: #cdd2e4;
   font-size: 0.68rem;
-  margin-bottom: 7px;
-}
-.skill-top span:last-child {
   color: #6f7892;
+  margin-top: 6px;
 }
-.bar {
-  height: 5px;
-  border-radius: 10px;
-  background: #1b2139;
-  overflow: hidden;
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.bar i {
-  display: block;
-  height: 100%;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #7255ff, #b08bff);
-  animation: grow 1s ease both;
-}
-.skill:nth-child(3) i {
-  animation-delay: 0.08s;
-}
-.skill:nth-child(4) i {
-  animation-delay: 0.16s;
-}
-.skill:nth-child(5) i {
-  animation-delay: 0.24s;
-}
-@keyframes grow {
-  from {
-    width: 0 !important;
-  }
+.skill-list li {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #cdd2e4;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  padding: 6px 10px;
 }
 @keyframes panelIn {
   from {
@@ -149,5 +124,8 @@
 @media (max-width: 600px) {
   .skill-grid {
     grid-template-columns: 1fr;
+  }
+  .skill-card {
+    padding: 18px;
   }
 }

@@ -3,12 +3,12 @@
     <div class="section-label">02 · SKILLS</div>
     <div class="heading-row">
       <div>
-        <h2 class="big-title">My <span>toolbox.</span></h2>
+        <h2 class="big-title">Skills &amp; <span>technologies.</span></h2>
         <p>
-          Technologies I use to build frontend experiences, APIs, analytics and AI-enabled products.
+          A practical toolkit spanning Angular development, frontend frameworks, APIs, data and testing.
         </p>
       </div>
-      <div class="stack-badge">MODERN<br /><b>FULL STACK</b></div>
+      <div class="stack-badge">CORE FOCUS<br /><b>ANGULAR &amp; FRONTEND</b></div>
     </div>
     <div class="skill-grid">
       <article class="skill-card" *ngFor="let group of groups">
@@ -17,15 +17,10 @@
             <b>{{ group.title }}</b
             ><small>{{ group.caption }}</small>
           </div>
-          <span>+</span>
         </div>
-        <div class="skill" *ngFor="let skill of group.skills">
-          <div class="skill-top">
-            <span>{{ skill.name }}</span
-            ><span>{{ skill.level }}%</span>
-          </div>
-          <div class="bar"><i [style.width.%]="skill.level"></i></div>
-        </div>
+        <ul class="skill-list">
+          <li *ngFor="let skill of group.skills">{{ skill.name }}</li>
+        </ul>
       </article>
     </div>
   </div>

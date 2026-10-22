@@ -1,13 +1,94 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-interface Skill { name:string; level:number; }
-interface SkillGroup { title:string; caption:string; skills:Skill[]; }
-@Component({ selector:'app-skills', standalone:true, imports:[CommonModule], templateUrl:'./skills.component.html', styleUrl:'./skills.component.scss' })
+interface Skill {
+  name: string;
+}
+interface SkillGroup {
+  title: string;
+  caption: string;
+  skills: Skill[];
+}
+@Component({
+  selector: 'app-skills',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './skills.component.html',
+  styleUrl: './skills.component.scss',
+})
 export class SkillsComponent {
   groups: SkillGroup[] = [
-    {title:'Frontend',caption:'Interfaces & UX',skills:[{name:'Angular',level:88},{name:'TypeScript',level:84},{name:'React',level:82},{name:'JavaScript',level:90}]},
-    {title:'Backend',caption:'APIs & services',skills:[{name:'Python',level:92},{name:'FastAPI / Flask',level:88},{name:'Node.js',level:72},{name:'REST APIs',level:90}]},
-    {title:'Data & AI',caption:'Data-driven products',skills:[{name:'SQL / PostgreSQL',level:90},{name:'ETL / Pandas',level:88},{name:'Power BI',level:85},{name:'Machine Learning',level:76}]},
-    {title:'Cloud',caption:'Delivery & DevOps',skills:[{name:'AWS',level:75},{name:'Docker',level:70},{name:'Git',level:90},{name:'CI/CD',level:72}]}
+    {
+      title: 'Angular & Core Frontend',
+      caption: 'Primary focus',
+      skills: [
+        { name: 'Angular' },
+        { name: 'TypeScript' },
+        { name: 'JavaScript' },
+        { name: 'Angular Material' },
+        { name: 'Reactive Forms' },
+        { name: 'Signals' },
+        { name: 'RxJS Observables' },
+        { name: 'HttpClient' },
+        { name: 'Lazy Loading' },
+        { name: 'Route Guards' },
+        { name: 'HTML5' },
+        { name: 'CSS3' },
+        { name: 'SCSS' },
+        { name: 'Responsive Design' },
+      ],
+    },
+    {
+      title: 'Additional Frontend',
+      caption: 'Libraries & frameworks',
+      skills: [
+        { name: 'React' },
+        { name: 'Next.js' },
+        { name: 'Redux' },
+        { name: 'React Query' },
+        { name: 'MUI' },
+        { name: 'Tailwind CSS' },
+        { name: 'Bootstrap' },
+        { name: 'Backbone.js' },
+        { name: 'RequireJS' },
+        { name: 'jQuery' },
+        { name: 'D3.js' },
+        { name: 'C3.js' },
+      ],
+    },
+    {
+      title: 'Backend & Data',
+      caption: 'APIs, databases & pipelines',
+      skills: [
+        { name: 'Python' },
+        { name: 'Flask' },
+        { name: 'FastAPI' },
+        { name: 'Node.js' },
+        { name: 'Express' },
+        { name: 'REST APIs' },
+        { name: 'PostgreSQL' },
+        { name: 'MySQL' },
+        { name: 'SQL Validation' },
+        { name: 'ETL Pipelines' },
+      ],
+    },
+    {
+      title: 'Quality & Delivery',
+      caption: 'Testing & collaboration',
+      skills: [
+        { name: 'Angular Component Testing' },
+        { name: 'Vitest' },
+        { name: 'Playwright' },
+        { name: 'Manual & Regression Testing' },
+        { name: 'API Testing' },
+        { name: 'Postman' },
+        { name: 'Git' },
+        { name: 'GitHub' },
+        { name: 'npm' },
+        { name: 'JIRA' },
+        { name: 'Agile' },
+        { name: 'Figma' },
+        { name: 'GitHub Pages' },
+      ],
+    },
   ];
 }
