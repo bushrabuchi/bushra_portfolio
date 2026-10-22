@@ -122,7 +122,7 @@ export class ProjectsComponent {
         'Angular portfolio presenting professional experience, technical skills, project work and contact information through reusable components and responsive layouts.',
       stack: ['Angular', 'TypeScript', 'HTML', 'SCSS'],
       type: 'ANGULAR / PORTFOLIO',
-      demo: 'https://bushrabuchi.github.io/bushra_portfolio/',
+      demo: 'https://bushra-portfolio-eight.vercel.app/',
       github: 'https://github.com/bushrabuchi/bushra_portfolio',
     },
     {

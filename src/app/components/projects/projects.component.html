@@ -29,8 +29,13 @@
           <div class="tags">
             <span *ngFor="let item of project.stack">{{ item }}</span>
           </div>
-          <div class="project-actions">
-            <a [href]="project.demo">Live Demo ↗</a><a [href]="project.github">GitHub ↗</a>
+          <div class="project-actions" *ngIf="project.demo || project.github">
+            <a *ngIf="project.demo" [href]="project.demo" target="_blank" rel="noopener"
+              >Live Demo ↗</a
+            >
+            <a *ngIf="project.github" [href]="project.github" target="_blank" rel="noopener"
+              >GitHub ↗</a
+            >
           </div>
         </div>
       </article>
