@@ -36,6 +36,16 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+## Deploying to GitHub Pages
+
+The site is published at `https://bushrabuchi.github.io/bushra_portfolio/`. To build and publish it to the `gh-pages` branch, run:
+
+```bash
+npm run deploy
+```
+
+In the repository's **Settings → Pages**, set the publishing source to the `gh-pages` branch and the `/(root)` folder. The deploy command sets the repository-specific base URL and publishes the contents of Angular's browser output at the branch root.
+
 ## Running unit tests
 
 To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
