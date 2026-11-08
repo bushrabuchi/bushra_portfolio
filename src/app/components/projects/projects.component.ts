@@ -57,6 +57,16 @@ export class ProjectsComponent {
     },
     {
       number: '02',
+      title: 'BoardFlow — Board & Meeting Management',
+      description:
+        'Board management frontend demo for organizing meetings, agendas and action items. Includes meeting creation and editing, member and owner assignment, meeting details and status tracking, with responsive layouts and light/dark themes.',
+      stack: ['Angular', 'React', 'TypeScript', 'SCSS'],
+      type: 'FRONTEND / WORKFLOW DEMO',
+      demo: 'https://boardflow-qy8n.vercel.app/dashboard',
+      github: 'https://github.com/bushrabuchi/boardflow',
+    },
+    {
+      number: '03',
       title: 'ProcureAI Admin Platform',
       description:
         'Procurement frontend demo with supplier management, purchase orders, approval and rejection workflows, action history, Signals and local browser persistence.',
@@ -66,7 +76,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/procureAI-admin-platform',
     },
     {
-      number: '03',
+      number: '04',
       title: 'ProcureAI Supplier Portal',
       description:
         'Supplier frontend demo with RFQ browsing, quotation submission, form validation and demo session handling.',
@@ -76,7 +86,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/procureAI-supplier-portal',
     },
     {
-      number: '04',
+      number: '05',
       title: 'Customizable Angular Dashboard',
       description:
         'Dashboard demo with chart, statistics and table widgets, analytics, settings, theme controls and client-side route guards.',
@@ -86,7 +96,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/angular-dashboard',
     },
     {
-      number: '05',
+      number: '06',
       title: 'Travel Website with AI and ML',
       description:
         'React travel storefront with package search and FastAPI integration for fare estimates, recommendations and review sentiment. ML experiments use generated training datasets.',
@@ -96,7 +106,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/travel_website_AI-ML',
     },
     {
-      number: '06',
+      number: '07',
       title: 'Flysmart Ticketing',
       description:
         'Flight-search and booking demo with traveller details, simulated payment and e-ticket views. Express APIs support flight and booking data; no real tickets or payments are issued.',
@@ -106,7 +116,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/flysmart-ticketing',
     },
     {
-      number: '07',
+      number: '08',
       title: 'React Admin Dashboard',
       description:
         'Learning and demonstration dashboard with data grids, interactive charts, a calendar and validated forms.',
@@ -116,7 +126,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/react-admin-dashboard-master',
     },
     {
-      number: '08',
+      number: '09',
       title: 'Bushra Portfolio',
       description:
         'Angular portfolio presenting professional experience, technical skills, project work and contact information through reusable components and responsive layouts.',
@@ -126,7 +136,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/bushra_portfolio',
     },
     {
-      number: '09',
+      number: '10',
       title: 'Travel BI Analytics',
       description:
         'Professional travel-agency BI application with sales and turnover dashboards, reporting and business-data validation.',
@@ -136,7 +146,7 @@ export class ProjectsComponent {
       github: '',
     },
     {
-      number: '10',
+      number: '11',
       title: 'SkyTraacs Airline BI',
       description:
         'Professional airline analytics and reporting application, combining dashboard development, backend integration and validation of business metrics.',
@@ -146,7 +156,7 @@ export class ProjectsComponent {
       github: '',
     },
     {
-      number: '11',
+      number: '12',
       title: 'Mobile BI Application',
       description:
         'Professional BI application with a React-based interface, Python backend, REST API integration and interactive data visualizations.',
@@ -156,7 +166,7 @@ export class ProjectsComponent {
       github: '',
     },
     {
-      number: '12',
+      number: '13',
       title: 'TRAACS ETL Pipelines',
       description:
         'Professional Python pipelines that extract, transform and load travel-agency data for BI dashboards, with SQL checks for data consistency.',
@@ -166,7 +176,7 @@ export class ProjectsComponent {
       github: '',
     },
     {
-      number: '13',
+      number: '14',
       title: 'SkyTraacs ETL Pipelines',
       description:
         'Professional airline-data pipelines supporting BI reporting through extraction, transformation, loading and data validation.',
@@ -176,7 +186,7 @@ export class ProjectsComponent {
       github: '',
     },
     {
-      number: '14',
+      number: '15',
       title: 'Kidney Disease Classification',
       description:
         'Deep-learning image-classification learning project with model-development and experiment-tracking work. Built for educational use.',
@@ -186,7 +196,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/Kidney-Disease-Classification-Deep-Learning-Project',
     },
     {
-      number: '15',
+      number: '16',
       title: 'Boston House Price Prediction',
       description:
         'Machine-learning learning project with a regression notebook, saved model and Python web interface for house-price prediction.',
@@ -196,7 +206,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/bostonhousepricing',
     },
     {
-      number: '16',
+      number: '17',
       title: 'MLflow Experiments',
       description:
         'Python experimentation repository with MLflow scripts and examples of text generation and summaries in different formats.',
@@ -206,7 +216,7 @@ export class ProjectsComponent {
       github: 'https://github.com/bushrabuchi/mlflow-3.0',
     },
     {
-      number: '17',
+      number: '18',
       title: 'Applied Machine Learning Projects',
       description:
         'Course projects covering predictive maintenance, patient-risk classification and banking credit-risk analysis, including model training and output validation.',
@@ -216,7 +226,7 @@ export class ProjectsComponent {
       github: '',
     },
     {
-      number: '18',
+      number: '19',
       title: 'Java Steganography',
       description:
         'College project exploring how text and image data can be hidden within digital media for message exchange.',
